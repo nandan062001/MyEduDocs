@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div >
+        <marquee behavior="scroll" direction="left" scrollamount="5" class="nn1">
+         This is a scrolling text using&Editing of the company.
+     </marquee>
+     </div>
+     <header class="site-header">
+         <div class="container">
+             <div class="logo">
+                 <h1><a href=""><img src="./img/logo.png" alt="HTML tutorial" style="width:155px;height:47px;"></a></h1>
+             </div>
+     
+             <!-- Main Dropdown -->
+             <div class="dropdown">
+                 <button id="nn8">All Courses</button>
+                 <div class="dropdown-content">
+                     <!-- Competitive Exams Option with Toggle -->
+                     <a href="#" onclick="toggleNestedDropdown()">Competitive Exams</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div>
+     
+                     <a href="#" onclick="toggleNestedDropdown2()">Only IAS</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown2" class="nested-dropdown">
+                         <a href="#">UPSC</a>
+                         <a href="#">State PCS</a>
+                      
+                     </div>
+     
+     
+                     <a href="#" onclick="toggleNestedDropdown3()">School Preparation</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown3" class="nested-dropdown">
+                         <a href="#">Pysic</a>
+                         <a href="#">Match</a>
+                         <a href="#">Biology</a>
+                         <a href="#">Chemistry</a>
+                         <a href="#">Other</a>
+                     </div>
+     
+     
+                     <a href="#" onclick="toggleNestedDropdown4()">Govt Exam</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown4" class="nested-dropdown">
+                         <a href="#">SSC CGL</a>
+                         <a href="#">CGL</a>
+                         <a href="#">Banking</a>
+                         <a href="#">Teaching</a>
+                         <a href="#">Other Exams</a>
+                     </div>
+     
+                 </div>
+             </div>
+     
+             <div class="dropdown">
+     
+                 <button id="nn8">Current Affairs </button>
+     
+                 <div class="dropdown-content">
+                     <!-- Competitive Exams Option with Toggle -->
+                     <a href="#" onclick="toggleNestedDropdown5()">Daily</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown5" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div>
+     
+                     <a href="#" onclick="toggleNestedDropdown6()">Weekly</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown6" class="nested-dropdown">
+                         <a href="#">UPSC</a>
+                         <a href="#">State PCS</a>
+                      
+                     </div>
+     
+     
+                     <a href="#" onclick="toggleNestedDropdown7()">Monthly</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown7" class="nested-dropdown">
+                         <a href="#">Pysic</a>
+                         <a href="#">Match</a>
+                         <a href="#">Biology</a>
+                         <a href="#">Chemistry</a>
+                         <a href="#">Other</a>
+                     </div>
+     
+     
+                     <a href="#" onclick="toggleNestedDropdown8()">Yearly</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown8" class="nested-dropdown">
+                         <a href="#">SSC CGL</a>
+                         <a href="#">CGL</a>
+                         <a href="#">Banking</a>
+                         <a href="#">Teaching</a>
+                         <a href="#">Other Exams</a>
+                     </div>
+     
+                 </div>
+     
+     
+                 
+                 <!-- <select id="myDropdown2" name="options" onchange="location = this.value;">
+                     <option value="" id="hidden-option">Current Affairs</option>
+                     <option value="footer.html" id="nn3">Daily</option>
+                     <option value="https://www.google.com" id="nn3">Weekly</option>
+                     <option value="https://www.google.com" id="nn3">Monthly</option>
+                     <option value="https://www.google.com" id="nn3">Yearly</option>
+                 </select> -->
+             </div>
+             <div class="dropdown">
+     
+                 <button id="nn8">Case Study</button>
+                 <div class="dropdown-content">
+                     <!-- Competitive Exams Option with Toggle -->
+                     <a href="#" onclick="toggleNestedDropdown20()">A</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown20" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div>
+     
+                     <a href="#" onclick="toggleNestedDropdown21()">B</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown21" class="nested-dropdown">
+                         <a href="#">UPSC</a>
+                         <a href="#">State PCS</a>
+                      
+                     </div>
+     
+     
+                     <a href="#" onclick="toggleNestedDropdown22()">C</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown22" class="nested-dropdown">
+                         <a href="#">Pysic</a>
+                         <a href="#">Match</a>
+                         <a href="#">Biology</a>
+                         <a href="#">Chemistry</a>
+                         <a href="#">Other</a>
+                     </div>
+     
+     
+                     <a href="#" onclick="toggleNestedDropdown23()">D</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <div id="nestedDropdown23" class="nested-dropdown">
+                         <a href="#">SSC CGL</a>
+                         <a href="#">CGL</a>
+                         <a href="#">Banking</a>
+                         <a href="#">Teaching</a>
+                         <a href="#">Other Exams</a>
+                     </div>
+     
+                 </div>
+     
+                 <!-- <select id="myDropdown3" name="options" onchange="location = this.value;">
+                     <option value="" id="hidden-option">Case Study</option>
+                     <option value="https://www.google.com" id="nn3">General Studies</option>
+                 </select> -->
+             </div>
+     
+             <!-- Laibrary -->
+     
+             <div class="dropdown">
+     
+                 <button id="nn8">Laibrary </button>
+     
+                 <div class="dropdown-content">
+                     <!-- Competitive Exams Option with Toggle -->
+                     <a href="#" onclick="toggleNestedDropdown9()">Magazines</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown9" class="nested-dropdown">
+                         <a href="https://www.pw.live/">A</a>
+                         <a href="#">B</a>
+                         <a href="#">C</a>
+                         <a href="#">D</a>
+                         <a href="#">Other Exams</a>
+                     </div> -->
+     
+                     <a href="#" onclick="toggleNestedDropdown10()">News Paper</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown10" class="nested-dropdown">
+                         <a href="#">A</a>
+                         <a href="#">B</a>
+                      
+                     </div> -->
+     
+     
+                     <a href="#" onclick="toggleNestedDropdown11()">Notes</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown11" class="nested-dropdown">
+                         <a href="#">Pysic</a>
+                         <a href="#">Match</a>
+                         <a href="#">Biology</a>
+                         <a href="#">Chemistry</a>
+                         <a href="#">Other</a>
+                     </div> -->
+     
+     
+                     <a href="#" onclick="toggleNestedDropdown12()">Calendar</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown12" class="nested-dropdown">
+                         <a href="#">SSC CGL</a>
+                         <a href="#">CGL</a>
+                         <a href="#">Banking</a>
+                         <a href="#">Teaching</a>
+                         <a href="#">Other Exams</a>
+                     </div> -->
+     
+                     <a href="#" onclick="toggleNestedDropdown13()">Textbooks </a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown13" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div> -->
+     
+                     <a href="#" onclick="toggleNestedDropdown14()">Typing speed</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown14" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div> -->
+     
+                     <a href="#" onclick="toggleNestedDropdown16()">Age calculator</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown16" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div> -->
+     
+                     <a href="#" onclick="toggleNestedDropdown17()">Fact checker with AI</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown17" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div> -->
+     
+                     <a href="#" onclick="toggleNestedDropdown18()">English correction</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown18" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div> -->
+     
+                     <a href="https://www.pw.live/" onclick="toggleNestedDropdown19()">Questions bank</a>
+                     <!-- Nested Dropdown for Competitive Exams -->
+                     <!-- <div id="nestedDropdown19" class="nested-dropdown">
+                         <a href="https://www.pw.live/">IIT JEE</a>
+                         <a href="#">NEET</a>
+                         <a href="#">GATE</a>
+                         <a href="#">ESE</a>
+                         <a href="#">Other Exams</a>
+                     </div> -->
+     
+                 </div>
+     
+     
+                 <!-- <select id="myDropdown4" name="options" onchange="location = this.value;">
+                     <option value="" id="hidden-option">Library</option>
+                     <option value="footer.html" id="nn3">Magazines</option>
+                     <option value="https://www.google.com" id="nn3">Newspaper</option>
+                     <option value="https://www.google.com" id="nn3">Notes</option>
+                     <option value="https://www.google.com" id="nn3">Calendar</option>
+                     <option value="https://www.google.com" id="nn3">Textbooks (Selected)</option>
+                     <option value="https://www.typingtest.com/" id="nn3">Typing speed</option>
+                     <option value="https://www.calculator.net/age-calculator.html" id="nn3">Age calculator</option>
+                     <option value="https://originality.ai/automated-fact-checker" id="nn3">Fact checker with AI</option>
+                     <option value="https://quillbot.com/grammar-check?msockid=366dd4f4fd606794050fc030fc9166b7" id="nn3">English correction</option>
+                     <option value="https://www.google.com" id="nn3">Questions bank</option>
+                 </select> -->
+             </div>
+             
+             <div class="search-bar">
+                 <button type="button" class="nn2"><a href="./login.html">Login/Register</a></button>
+             </div>
+         </div>
+     </header>
+     <script src="script.js"></script>
+    <header>
+        <h1>Welcome to My Page SSC</h1>
+        
+    </header>
+    <main>
+        
+
+        <div>
+            <div class="nj13"><img src="./img/video.png" class="nj16"><br><a href="https://www.w3schools.com" class="nj15">Recorded Classes</a></div>
+            <div class="nj14"><img src="./img/video.png" class="nj16"><br><a href="https://www.w3schools.com" class="nj15"> Live Classes</a></div>
+        </div>
+        
+    </main>
+    <footer>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <img src="./img/logo.png" >
+                        <p>Our guiding principle is education with technology, innovation and AI. Since, education and technology modules are changing/upgrading, we at myedudocs designs game-based learning modules that strengthen competition, creativity, student centric learning, and feedback.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Account Deletion</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Admission</h4>
+                        <ul>
+                            <li><a href="https://admission.lpu.in/">LPU </a></li>
+                            <li><a href="https://admission.uod.ac.in/">Delhi University </a></li>
+                            <li><a href="https://admissions.galgotiasuniversity.edu.in/">Galgotiya</a></li>
+                            <li><a href="https://www.gnduadmissions.org/">Gndu</a></li>
+                            <li><a href="https://admissions2024.amity.edu/bengaluru?utm_source=Bing%20Ads&utm_medium=Search&utm_campaign=91_07_Bengaluru_2024_Search_Bing_Brand_Exact&utm_adgroup=Brand_Exact&utm_term=amity%20admission&msclkid=e4753589256312b04c6e533665783375">Amity University</a></li>
+                            <li><a href="https://www.cuchd.in/admissions/">Chandigarh University </a></li>
+                        </ul>
+                    </div><br>
+                    <div class="footer-section">
+                        <h4>Sarkari Job Alerts</h4>
+                        <ul>
+                            <li><a href="https://www.sarkariresult.com/">UPSC </a></li>
+                            <li><a href="https://www.sarkariresult.com/">BPSC </a></li>
+                            <li><a href="https://www.sarkariresult.com/">SSC</a></li>
+                            <li><a href="https://www.sarkariresult.com/">GATE</a></li>
+                            <li><a href="https://www.sarkariresult.com/">NEET MEDICAL</a></li>
+                            <li><a href="https://www.sarkariresult.com/">IIT-JEE </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Contact </a></li>
+                            <li><a href="#">About </a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Account </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Contact </a></li>
+                            <li><a href="#">About </a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Account </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Contact </a></li>
+                            <li><a href="#">About </a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Account </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Contact </a></li>
+                            <li><a href="#">About </a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Account </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact Us</h4>
+                        <p>Email: info@example.com</p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <!-- <p>&copy; 2024 Your Company. All rights reserved.</p> -->
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
